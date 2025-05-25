@@ -1,0 +1,9 @@
+{
+	"name": "opengl-particle-system",
+	"version": "1.0.0",
+	"dependencies": [
+		"glfw3",
+		"glm",
+		"glad"
+		]
+}
