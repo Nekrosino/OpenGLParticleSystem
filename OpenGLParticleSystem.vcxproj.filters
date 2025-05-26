@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{ce0c3386-11d7-4513-9a3d-67c56adf26c2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGLParticleSystem.cpp">
@@ -23,5 +26,32 @@
     <ClInclude Include="Particle.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Shaders\floor.vert">
+      <Filter>Shaders</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenGLParticleSystem.rc">
+      <Filter>Pliki zasobów</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\floor.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\particle.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\particle.vert">
+      <Filter>Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

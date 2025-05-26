@@ -130,7 +130,20 @@
     <ClCompile Include="OpenGLParticleSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Particle.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Shaders\floor.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenGLParticleSystem.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\floor.frag" />
+    <None Include="Shaders\particle.frag" />
+    <None Include="Shaders\particle.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
