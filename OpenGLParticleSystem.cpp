@@ -164,6 +164,9 @@ int main() {
 
         glm::mat4 model = glm::mat4(1.0f); // Identity matrix for the floor
 
+        glUseProgram(floorShader);
+        glBindVertexArray(floorVAO);
+
         GLuint modelLoc = glGetUniformLocation(floorShader, "model");
         GLuint viewLoc = glGetUniformLocation(floorShader, "view");
         GLuint projLoc = glGetUniformLocation(floorShader, "projection");
@@ -174,8 +177,8 @@ int main() {
 
 
 
-        glUseProgram(floorShader);
-        glBindVertexArray(floorVAO);
+  
+
         glDrawArrays(GL_TRIANGLES, 0, 6);
 
         // Update and spawn particles
